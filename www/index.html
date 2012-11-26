@@ -6,10 +6,11 @@
 		<script type="text/javascript" src="js/jquery.mobile.1.2.min.js"></script>
         <script type="text/javascript" src="cordova-2.2.0.js"></script>
         <script type="text/javascript">
-			document.addEventListener("deviceready", function () {
-				alert('Our first PhoneGap app');
-			}, false);
-            
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			function onDeviceReady() {
+				alert("made it");
+			}            
         </script>
     </head>
 	<body>
